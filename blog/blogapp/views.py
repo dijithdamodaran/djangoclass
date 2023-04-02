@@ -16,3 +16,6 @@ def delete(request,rid):
 def addition(request,a,b):
     c=int(a)+int(b)
     return HttpResponse("this is addition :"+str(c))
+
+def renderhtml(request):
+    return render(request,'hello.html')
