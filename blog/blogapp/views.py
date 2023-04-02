@@ -3,3 +3,5 @@ from django.http import HttpResponse
 # Create your views here.
 def about(request):
     return HttpResponse("hello from function based view")
+def contact(request):
+    return HttpResponse("hello from function based view contact")
