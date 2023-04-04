@@ -9,5 +9,27 @@
 <body>
     <h1>hello word</h1>
     {{data}}
+    <br>
+    <hr>
+    {% if x > y %}
+
+    <p>in if block</p>
+
+    <p>{{x}} is grater</p>
+    
+    {% else %}
+    <p>in else block</p>
+
+    <p>{{y}} is grater</p>
+
+    {% endif %}
+    <hr>
+    <h3>loops</h3>
+    {% for x in z %}
+
+    <p>{{x}}</p>
+
+    {% endfor %}
+
 </body>
 </html>

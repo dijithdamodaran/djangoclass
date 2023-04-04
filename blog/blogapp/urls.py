@@ -9,4 +9,5 @@ urlpatterns = [
     path('add/<a>/<b>',views.addition),
     path('hello',views.renderhtml),
     path('datatohtml',views.passdatatohello),
+    path('home',views.homepage),
 ]

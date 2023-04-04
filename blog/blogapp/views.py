@@ -26,7 +26,13 @@ def renderhtml(request):
 def passdatatohello(request):
     #content={'data':'hello world'}
     content={}
-    content['data']="hello world"
+    content['data']="hello world "
+    content['x']=80
+    content['y']=90
+    content['z']=[10,20,30,40,50,60]
 
     return render(request,'hello.html',content)
+
+def homepage(request):
+    return render(request,'home.html')
 
