@@ -20,3 +20,13 @@ def addition(request,a,b):
 
 def renderhtml(request):
     return render(request,'hello.html')
+
+#passing data to hello.html file
+
+def passdatatohello(request):
+    #content={'data':'hello world'}
+    content={}
+    content['data']="hello world"
+
+    return render(request,'hello.html',content)
+
